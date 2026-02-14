@@ -1,0 +1,18 @@
+#Executable 
+shell
+
+#Object and temp files
+obj/
+*.o
+.cache/
+.clang-format
+compile_commands.json
+
+#Logs and editors temp files
+*.log
+.nvim/
+.swp
+.swo
+
+#Valgrind temp
+vgcore.*

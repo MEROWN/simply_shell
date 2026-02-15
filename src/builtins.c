@@ -36,6 +36,18 @@ int shell_cd(char** args)
    return 1;
 }
 
+int shell_help(char** args)
+{
+    int n = sizeof(builtin_str) / sizeof(char*);
+    printf("Use 'man -k' or 'info' to find out more about commands not in this list.\n");
+
+    for (int i = 0; i < n; i++) 
+    {
+	printf("%s \n", builtin_str[i]);
+    }
+    return 1;
+}
+
 int builtin_count()
 {
     return sizeof(builtin_str) / sizeof(char*);

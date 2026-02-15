@@ -3,6 +3,7 @@
 
 #define BUILTIN_TABLE \
     X("cd", shell_cd) \
+    X("help", shell_help)\
     X("exit", shell_exit)
 
 #define X(name, func) int func(char **args);

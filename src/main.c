@@ -16,11 +16,16 @@ int main(void) {
   pid_t pid = 0;
 
   while (printf("> "), fflush(stdout), fgets(buffer, sizeof(buffer), stdin)) {
+    
     str_cut(buffer);
 
     args = split_line(buffer);
 
-    if (args != NULL && args[0] != NULL) {
+    if (args == NULL || args[0] == NULL) 
+    {
+     if (args) free (args);
+     continue;
+    }
       int status = is_builtin(args);
 
       if (status == 0) {
@@ -29,7 +34,6 @@ int main(void) {
       }
 
       if (status == -1)
-
       {
         pid = fork();
 
@@ -48,9 +52,8 @@ int main(void) {
           wait(NULL);
         }
       }
-
       free(args);
     }
-  }
-  return 0;
+    return 0; 
 }
+

@@ -36,11 +36,11 @@ A minimalistic command-line interpreter (shell) written in C, developed as a sys
    ```
 ## Usage 
 Once the shell is running, you can use standard Linux commands:
-* 'ls -la'
-* 'mkdir new_folder'
-* 'cd include (Built-in)'
-* 'help (Built-in)'
-* 'exit (Built-in)'
+* `ls -la`
+* `mkdir new_folder`
+* `cd include (Built-in)`
+* `help (Built-in)`
+* `exit (Built-in)`
 
 ## Technical Highlights: X-Macros
 

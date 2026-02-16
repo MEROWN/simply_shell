@@ -1,6 +1,6 @@
 # Custom C Shell
 
-A minimalistic command-line interpreter (shell) written in C, developed as a systems programming project at **VUT FIT**.
+A minimalistic command-line interpreter (shell) written in C.
 
 ## Features
 * **Process Management**: Executes external programs using `fork()`, `execvp()`, and `wait()`.
